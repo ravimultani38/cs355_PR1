@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BB-Services</title>
+  <link rel="stylesheet" href="Sstyle.css">
+</head>
+
+<body>
+  <header class="service-header">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tires.html">Tires</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="about">
+    <h2>Our Other Services</h2>
+    <div id="service-container" class="services">
+      <!-- Service items will be added dynamically using JavaScript -->
+    </div>
+    <h2>Eligible Vehicles for Services</h2>
+    <table>
+      <tr>
+        <th>Car</th>
+        <th>Make</th>
+        <th>Model</th>
+        <th>Tire Size</th>
+      </tr>
+      <tr>
+        <td>Toyota Camry</td>
+        <td>Toyota</td>
+        <td>Camry</td>
+        <td>205/60R16</td>
+      </tr>
+      <tr>
+        <td>Ford Mustang</td>
+        <td>Ford</td>
+        <td>Mustang</td>
+        <td>255/40R19</td>
+      </tr>
+      <tr>
+        <td>Honda Civic</td>
+        <td>Honda</td>
+        <td>Civic</td>
+        <td>195/55R15</td>
+      </tr>
+      <tr>
+        <td>Chevrolet Silverado</td>
+        <td>Chevrolet</td>
+        <td>Silverado</td>
+        <td>275/55R20</td>
+      </tr>
+      <tr>
+        <td>Nissan Altima</td>
+        <td>Nissan</td>
+        <td>Altima</td>
+        <td>215/60R16</td>
+      </tr>
+      <tr>
+        <td>BMW 3 Series</td>
+        <td>BMW</td>
+        <td>3 Series</td>
+        <td>225/45R17</td>
+      </tr>
+    </table>
+  </section>
+  <div class="shopping-cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items">
+
+    </ul>
+    <p id="total"></p>
+    <button onclick="showCheckoutForm()">Proceed to Checkout</button>
+  </div>
+  <form id="checkout-details" style="display: none;">
+    <label for="customer-name">Name:</label>
+    <input type="text" id="customer-name" name="customer-name" required><br>
+    <label for="shipping-address">Shipping Address:</label><textarea id="billing-address" name="billing-address"
+      required></textarea><br>
+    <label for="billing-address">Billing Address:</label>
+    <textarea id="billing-address" name="billing-address" required></textarea><br>
+    <button type="button" onclick="checkout()">Checkout</button>
+  </form>
+  <script src="Sscript.js"></script>
+</body>
+<footer>
+  <p>&copy; 2024 BrownBoysTires</p>
+</footer>
+
+</html>
